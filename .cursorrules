@@ -1,0 +1,25 @@
+# Component Export/Import Rules
+
+## Component Structure
+- When creating new components, export them directly from their component file
+- Avoid creating unnecessary index.ts files for simple component exports
+- Use descriptive component names that match the file name
+- Place components in appropriate folders based on their purpose
+
+## Import/Export Patterns
+- Import components directly from their source files: `import { ComponentName } from "@/components/path/to/component-file"`
+- Only create index.ts files when you need to re-export multiple components or provide a public API
+- Use named exports for components: `export function ComponentName()`
+- Avoid default exports for React components unless there's a specific reason
+
+## File Organization
+- Group related components in folders with descriptive names
+- Use kebab-case for folder and file names
+- Keep component files focused on a single responsibility
+- Place shared utilities in a separate utils folder
+
+## Code Quality
+- Always use TypeScript for React components
+- Include proper type definitions for props
+- Use consistent naming conventions across the project
+- Keep components small and focused on a single responsibility 

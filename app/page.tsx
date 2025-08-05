@@ -3,15 +3,13 @@
 import { useState, useEffect } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import "react-grid-layout/css/styles.css";
-import {
-  WeatherWidget,
-  QuickActionsWidget,
-  SearchWidget,
-  CalendarWidget,
-  StatsWidget,
-  ThemeToggleWidget,
-  NotesWidget,
-} from "@/components/dashboard-widgets";
+import { WeatherWidget } from "@/components/widgets/weather-widget/weather-widget";
+import { QuickActionsWidget } from "@/components/widgets/quick-actions-widget/quick-actions-widget";
+import { SearchWidget } from "@/components/widgets/search-widget/search-widget";
+import { CalendarWidget } from "@/components/widgets/calendar-widget/calendar-widget";
+import { StatsWidget } from "@/components/widgets/stats-widget/stats-widget";
+import { ThemeToggleWidget } from "@/components/widgets/theme-toggle-widget/theme-toggle-widget";
+import { NotesWidget } from "@/components/widgets/notes-widget/notes-widget";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
